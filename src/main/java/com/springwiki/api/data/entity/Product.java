@@ -1,16 +1,19 @@
 package com.springwiki.api.data.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "product")
+@Builder
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@ToString(exclude= "name")
+@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,3 +32,5 @@ public class Product {
 
     private LocalDateTime updatedAt;
 }
+
+

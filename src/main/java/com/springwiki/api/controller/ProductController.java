@@ -32,17 +32,13 @@ public class ProductController {
 
     @GetMapping()
     public ResponseEntity<ProductResponseDto> getProduct(Long number) {
-
         ProductResponseDto productResponseDto = productService.getProduct(number);
-
         return ResponseEntity.status(HttpStatus.OK).body(productResponseDto);
     }
 
     @PostMapping()
     public ResponseEntity<ProductResponseDto> createProduct(@RequestBody ProductDto productDto) {
-
         ProductResponseDto productResponseDto = productService.saveProduct(productDto);
-
         return ResponseEntity.status(HttpStatus.OK).body(productResponseDto);
     }
 

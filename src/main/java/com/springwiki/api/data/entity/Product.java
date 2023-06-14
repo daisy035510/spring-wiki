@@ -28,7 +28,15 @@ public class Product extends BaseEntity{
     @Column(nullable = false)
     private Integer stock;
 
+    // 일대일 양방향 매핑
+    @OneToOne(mappedBy = "product")
+    @ToString.Exclude
+    private ProductDetail productDetail;
 
+    @ManyToOne
+    @JoinColumn(name = "provider_id")
+    @ToString.Exclude
+    private Provider provider;
 }
 
 

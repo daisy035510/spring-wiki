@@ -2,10 +2,11 @@ package com.springwiki.api.data.dto;
 
 import lombok.*;
 
-@Data
+@Getter
+@Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Builder
 public class ProductResponseDto {
     private Long number;

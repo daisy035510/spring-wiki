@@ -9,7 +9,7 @@
 ### ⚙️ 개발 환경
 - `JDK 17`
 - **IDE** : Intellij IDEA 2022.3.3
-- **Framework** : Springboot(2.x)
+- **Framework** : Springboot 2.5.6
 - **Database** : mariadb 10.11.2
 - **SQL** : Spring Data JPA
 - **Build** : Gradle 7.6.1
@@ -27,10 +27,13 @@
  - 다대일, 일대다 매핑
  - 다대다 매핑
 
-#### Hibernate Validator
+#### 유효성 검사와 예외처리
+- Hibernate Validator
 
 #### 서버 간 통신
 - RestTemplate
 
 #### 서비스의 인증과 권한 부여
 - 스프링 시큐리티와 JWT
+
+#### 액추에이터

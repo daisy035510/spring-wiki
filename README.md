@@ -32,6 +32,7 @@
 
 #### 서버 간 통신
 - RestTemplate
+- 통신할 타겟 프로젝트(서버) (https://github.com/daisy035510/serverBox/tree/main)
 
 #### 서비스의 인증과 권한 부여
 - 스프링 시큐리티와 JWT
